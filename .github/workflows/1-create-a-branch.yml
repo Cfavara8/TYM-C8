@@ -1,4 +1,4 @@
-name: create my first branch
+name: Step 1, create a branch
 
 # This step listens for the learner to create branch `my-first-branch`.
 # This workflow updates from step 1 to step 2.
@@ -64,6 +64,3 @@ jobs:
           from_step: 1
           to_step: 2
           branch_name: my-first-branch
-git add .github/workflows/1-create-a-branch.yml
-git commit -m "Correzione del nome del workflow e aggiornamento delle condizioni"
-git push origin main
