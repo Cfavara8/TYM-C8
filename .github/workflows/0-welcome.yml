@@ -1,11 +1,11 @@
-name: Step 0, Welcome
+name:0-benvenuto.yml
 
 # This step triggers after the learner creates a new repository from the template.
 # This workflow updates from step 0 to step 1.
 
 # This will run every time we create push a commit to `main`.
 # Reference: https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
-on:
+on:push
   workflow_dispatch:
   push:
     branches:
@@ -20,7 +20,7 @@ permissions:
 jobs:
   # Get the current step to only run the main job when the learner is on the same step.
   get_current_step:
-    name: Check current step number
+    name: 0
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
